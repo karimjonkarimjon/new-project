@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="div_boss">
+    {% if servic.img %}
+    <img src="{{servic.img.url}}" alt="" class="img_div">
+    <img src="{{servic.img.url}}" alt="" class="img_div_2">
+    <img src="{{servic.img.url}}" alt="" class="img_div_3">
+    {% endif %}
+    <h2 class="h2_div">{{servic.name}}</h2>
+    <p class="p_div">{{servic.descrition}}</p>
+</div> 
+{% endblock content %}
